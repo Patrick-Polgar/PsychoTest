@@ -2,18 +2,24 @@
 
 # Define the list of questions
 questions = [
-    "What do you think, do you know yourself good enough?",
-    "Do you enjoy to speak with many people?",
-    "Do you like to speak about your emotions with your friends",
-    "Are you an optimist?",
-    "Do you like to be in a community?",
-    "Do you like to share your ideas with others?"
+    "1. What do you think, do you know yourself good enough?",
+    "2. Do you enjoy to speak with many people?",
+    "3. Do you like to speak about your emotions with your friends",
+    "4. Are you an optimist?",
+    "5. Do you like to be in a community?",
+    "6. Do you like to share your ideas with others?",
+    "7. Do you like to play with the children?",
+    "8. Do you hate to read everyday alone?",
+    "9. Do you like to walk among people on the street?",
+    "10.Do you think, being alone for a long time is boring?"
+
 ]
 
 # create a list to store the answers
 answers = []
 
-# Loop through the questions and promt the user for an answer
+# Loop through the questions and promt the user for an answer 
+# By typo get an error message
 for question in questions:
     while True:
         answer = input(question + " (yes/no) ")
@@ -29,13 +35,19 @@ for answer in answers:
     if answer == "yes":
         extravert_score += 1
 
-if extravert_score > 2:
-    psychology_type = "Extraverted"
+if extravert_score >= 8:
+    psychology_type = "Strong Extraverted"
+elif extravert_score >= 6:
+    psychology_type = "Light Extraverted"
+elif extravert_score == 5:
+    psychology_type = "Balanced"
+elif extravert_score >= 3:
+    psychology_type = "Light Introverted"
 else:
-    psychology_type = "Introverted"
+    psychology_type = "Strong Introverted"
 
 # It is just a basic beginner task to decide it, whether someone extraverted or introverted
 
 # Print the results
-print("Based on your answers, your psychology type is:", psychology_type)
+print("Based on your answers, your character is:", psychology_type)
 
