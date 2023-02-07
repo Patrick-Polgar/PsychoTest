@@ -12,7 +12,6 @@ questions = [
     "8. Do you hate to read everyday alone?",
     "9. Do you like to walk among people on the street?",
     "10.Do you think, being alone for a long time is boring?"
-
 ]
 
 # create a list to store the answers
@@ -29,12 +28,14 @@ for question in questions:
         else:
             print("Error, please type 'yes' or 'no'!")
 
+
 # Analyze the answers to determine the psychology type
 extravert_score = 0
 for answer in answers:
     if answer == "yes":
         extravert_score += 1
 
+psychology_type = ""
 if extravert_score >= 8:
     psychology_type = "Strong Extraverted"
 elif extravert_score >= 6:
@@ -46,8 +47,5 @@ elif extravert_score >= 3:
 else:
     psychology_type = "Strong Introverted"
 
-# It is just a basic beginner task to decide it, whether someone extraverted or introverted
-
 # Print the results
 print("Based on your answers, your character is:", psychology_type)
-
