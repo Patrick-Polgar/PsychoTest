@@ -1,4 +1,4 @@
-# PsychoTestApi
+# PsychoTest1
 
 This is my first beginner psychological test to decide it, that what kind of personality would the user have...
 
