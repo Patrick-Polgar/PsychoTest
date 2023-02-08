@@ -32,7 +32,7 @@ def show_result():
     answers = {}
     if request.method == 'POST':
         for i in range(1,11):
-            answer = request.form.get(questions[i-1]')
+            answer = request.form.get(questions[i-1])
             if answer:
                 answers[str(i)] = answer
         result = calculate_result(answers)
