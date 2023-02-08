@@ -2,11 +2,11 @@
 
 def calculate_result(answers):
     extravert_score = 0
-    for i in range(1, 11):
+    for i in range(0, 10):
         if answers.get(str(i)) == "yes":
             extravert_score += 1
-        elif answers.get(str(i)) == "no":
-            extravert_score -= 1
+            # elif answers.get(str(i)) == "no":
+            # extravert_score -= 1
 
     psychology_type = ""
     if extravert_score >= 8:
