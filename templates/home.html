@@ -1,19 +1,27 @@
 <html>
   <head>
     <title>Psychology Test</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="/static/show_result.js"></script>
   </head>
   <body>
     <h1>Welcome to the Psychology Test</h1>
-    <p>Answer the following questions by typing 'yes' or 'no'</p>
-   <form action="{{ url_for('show_result') }}" method="post">
+    <p>Answer the following questions by typing 'Yes' or 'No'</p>
+    <form id="psychology-test-form" method="post">
       {% for question in questions %}
         {{ question }}
         <br>
-        <input type="radio" name="{{ question }}" value="yes"> Yes
-        <input type="radio" name="{{ question }}" value="no"> No
+        <input type="radio" name="{{ question }}" value="1"> Yes
+        <input type="radio" name="{{ question }}" value="0"> No
         <br><br>
       {% endfor %}
       <input type="submit" value="Submit">
     </form>
+    <div id="result">
+      {% if result %}
+        <h2>Your Result:</h2>
+    <p>{{ result }}</p>
+      {% endif %}
+     </div>
   </body>
 </html>

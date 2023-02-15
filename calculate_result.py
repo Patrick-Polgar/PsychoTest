@@ -3,7 +3,7 @@
 def calculate_result(answers):
     extravert_score = 0
     for i in range(0, 10):
-        if answers.get(str(i)) == "yes":
+        if answers.get(str(i)) == "1":
             extravert_score += 1
             # elif answers.get(str(i)) == "no":
             # extravert_score -= 1
