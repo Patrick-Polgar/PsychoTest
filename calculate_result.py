@@ -1,4 +1,4 @@
-""" calculate_result """ 
+""" calculate_result """
 
 def calculate_result(answers):
     extravert_score = 0

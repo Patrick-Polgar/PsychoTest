@@ -31,7 +31,7 @@ def home():
 def show_result():
     answers = {}
     data = request.form
-    for i in range(0,10):
+    for i in range(0, 10):
         answer = data.get(questions[i])
         if answer:
             answers[str(i)] = answer
