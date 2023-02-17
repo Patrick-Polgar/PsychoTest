@@ -1,6 +1,46 @@
+/* PsychoTestApi Style */
+
+@font-face {
+  font-family: 'Ubuntu';
+  src: url('fonts/Ubuntu-Reguar.ttf') format('truetype');
+}
+
+h1 {
+  font-size: 32px;
+  text-shadow: 2px 2px #000, -2px -2px #000, 2px -2px #000, -2px 2px #000, 0 0 10px #00F0FF;
+  color: silver;
+  margin-bottom: 32px;
+}
+
+p {
+  font-style: italic;
+  font-size: 16px;
+  line-height: 1.5;
+  margin-bottom: 32px;
+}
+
 body {
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 16px;
+  color: silver;
+  padding: 32px 0 16px 16px;
   background-image: url('/static/background.png');
   background-repeat: no-repeat;
-  background-size: cover;
+  background-position: cover;
+  background-size: 100% 100%;
+}
+
+input[type="submit"] {
+  font-family: 'Ubuntu', sans-serif;
+}
+
+#result h2 {
   color: silver;
+  font-size: 18px;
+}
+
+#result p {
+  color: orange;
+  font-size: 28px;
+  font-style: bold;
 }
