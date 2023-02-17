@@ -12,7 +12,7 @@
       {% for question in questions %}
         {{ question }}
         <br>
-        <input type="radio" name="{{ question }}" value="1"> Yes
+        <input type="radio" name="{{ question }}" value="1"required> Yes
         <input type="radio" name="{{ question }}" value="0"> No
         <br><br>
       {% endfor %}
